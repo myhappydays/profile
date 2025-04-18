@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>onlyoli.space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+    <!-- 폰트 불러오기 -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        @font-face {
+            font-family: 'GowunBatang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/GowunBatang.woff') format('woff');
+            font-display: swap;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pretendard': ['Pretendard', 'sans-serif'],
+                        'gowun': ['GowunBatang', 'serif'],
+                        'jetbrains': ['JetBrains Mono', 'monospace'],
+                        'sans': ['Noto Sans KR', 'sans-serif']
+                    },
+                    colors: {
+                        cream: '#F9F6EF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-cream text-gray-800 font-pretendard">
+    <main class="max-w-3xl mx-auto py-16 px-6">
+        <article class="prose prose-slate max-w-none">
+            <h1 class="font-bold text-4xl mb-6">안녕하세요!</h1>
+            <blockquote class="font-gowun text-lg leading-relaxed text-gray-700">
+                협성대학교에서 컴퓨터를 공부하고 있는 <strong class="font-bold">황석준</strong>입니다.<br>
+                배우고 만든 것을 기록하며 성장하는 중입니다.
+            </blockquote>
+
+            <ul class="mt-8 space-y-2">
+                <li><a href="https://github.com/onlyoli" class="text-blue-600 underline">GitHub</a></li>
+                <li><a href="https://instagram.com/_0nly.0li_" class="text-blue-600 underline">인스타그램</a></li>
+                <li><a href="mailto:hello@onlyoli.space" class="text-blue-600 underline">이메일</a></li>
+                <li><a href="https://velog.io/@onlyoli" class="text-blue-600 underline">벨로그</a></li>
+                <li><a href="https://kiro.onlyoli.space" class="text-blue-600 underline">Kiro-Ground</a></li>
+            </ul>
+
+            <footer class="text-sm mt-16 text-gray-500">
+                황석준 | 협성대학교<br>
+                edited by Kiro
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
