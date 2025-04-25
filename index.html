@@ -1,105 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>onlyoli.space</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-    <style>
-        @font-face {
-            font-family: 'GowunBatang';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/GowunBatang.woff') format('woff');
-            font-display: swap;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'pretendard': ['Pretendard', 'sans-serif'],
-                        'gowun': ['GowunBatang', 'serif'],
-                        'jetbrains': ['JetBrains Mono', 'monospace'],
-                        'sans': ['Noto Sans KR', 'sans-serif']
-                    },
-                    colors: {
-                        primary: '#12574a'
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <title>onlyoli.space</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    @font-face {
+      font-family: 'GowunBatang';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/GowunBatang.woff') format('woff');
+      font-display: swap;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'pretendard': ['Pretendard', 'sans-serif'],
+            'gowun': ['GowunBatang', 'serif'],
+            'jetbrains': ['JetBrains Mono', 'monospace'],
+            'sans': ['Noto Sans KR', 'sans-serif'],
+          },
+          colors: {
+            primary: '#12574a',
+          },
+        },
+      },
+    };
+  </script>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-800 font-pretendard">
-    <header class="w-full py-4 px-6 bg-white shadow-sm sticky top-0 flex justify-between items-center z-50">
-        <h1 class="text-xl font-bold text-gray-800">onlyoli.space</h1>
-        <nav class="space-x-4 text-sm text-gray-600">
-            <a href="#about" class="hover:underline">소개</a>
-            <a href="#links" class="hover:underline">링크</a>
-            <a href="#projects" class="hover:underline">프로젝트</a>
-        </nav>
-    </header>
+  <header class="w-full py-4 px-6 bg-white shadow-sm sticky top-0 flex justify-between items-center z-50">
+    <h1 class="text-xl font-bold text-primary">onlyoli.space</h1>
+    <nav class="space-x-4 text-sm text-gray-600">
+      <a href="#about" class="hover:underline">about</a>
+      <a href="#hello" class="hover:underline">Hello</a>
+      <a href="#notes" class="hover:underline">Notes</a>
+      <a href="#projects" class="hover:underline">Side A</a>
+      <a href="#creative" class="hover:underline">Side B</a>
+    </nav>
+  </header>
 
-    <main class="max-w-3xl mx-auto py-16 px-6">
-        <section id="about" class="prose prose-slate max-w-none mb-12">
-            <h1 class="font-bold text-4xl mb-6">안녕하세요!</h1>
-            <blockquote class="font-gowun text-lg leading-relaxed text-gray-700">
-                협성대학교에서 컴퓨터를 공부하고 있는 <strong class="font-bold">황석준</strong>입니다.<br>
-                배우고 만든 것을 기록하며 성장하는 중입니다.
-            </blockquote>
-        </section>
-
-        <section id="links" class="space-y-12">
-            <div>
-                <h2 class="text-xl font-semibold text-primary mb-4">소셜 & 연락</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                    <a href="https://instagram.com/_0nly.0li_" class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
-                        <div class="text-lg font-semibold text-primary">Instagram</div>
-                        <div class="text-sm text-gray-500">인스타그램</div>
-                    </a>
-                    <a href="mailto:hello@onlyoli.space" class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
-                        <div class="text-lg font-semibold text-primary">Email</div>
-                        <div class="text-sm text-gray-500">연락하기</div>
-                    </a>
-                </div>
+  <main class="py-16 px-6 flex justify-center">
+      <div class="w-full max-w-2xl space-y-16">
+      <section id="about" class="prose prose-slate max-w-none mb-12">
+        <h1 class="font-bold text-4xl text-primary mb-6">안녕하세요!</h1>
+        <blockquote class="font-gowun text-lg leading-relaxed text-gray-700">
+            협성대학교에서 컴퓨터를 공부하고 있는 <strong class="font-bold">황석준</strong>입니다.<br>
+            배우고 만든 것을 기록하며 성장하는 중입니다.
+        </blockquote>
+      </section>
+      <!-- Hello -->
+      <section id="hello" class="prose prose-slate max-w-none mb-4">
+        <h2 class="text-xl font-semibold text-primary mb-4">Hello</h2>
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-lg font-semibold text-primary">SNS</div>
+            <div class="text-sm text-gray-500 mb-2">@_0nly.0li_</div>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="https://instagram.com/_0nly.0li_" class="text-gray-600 hover:underline">📸 Instagram</a>
             </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-primary mb-4">개발 & 기록</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                    <a href="https://github.com/myhappydays" class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
-                        <div class="text-lg font-semibold text-primary">GitHub</div>
-                        <div class="text-sm text-gray-500">코드 저장소</div>
-                    </a>
-                    <a href="https://velog.io/@myhappydays" class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
-                        <div class="text-lg font-semibold text-primary">Velog</div>
-                        <div class="text-sm text-gray-500">기술 블로그</div>
-                    </a>
-                </div>
+          </div>
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-lg font-semibold text-primary">Email</div>
+            <div class="text-sm text-gray-500 mb-2">hello@onlyoli.space</div>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="mailto:hello@onlyoli.space" class="text-gray-600 hover:underline">✉️ Mailto</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="projects" class="mt-16">
-            <h2 class="text-xl font-semibold text-primary mb-4">프로젝트</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <a href="https://kiro.onlyoli.space" class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="text-lg font-semibold text-primary mb-1">Kiro-Ground</div>
-                    <div class="text-sm text-gray-500">커스텀 마크업 언어를 기반으로 한 기록 플랫폼</div>
-                </a>
-                <a href="https://github.com/myhappydays/vina" class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="text-lg font-semibold text-primary mb-1">Kiro-Ground</div>
-                    <div class="text-sm text-gray-500">사용자와의 주도적 인터랙션, 규칙 기반 행동, 기억 기능을 중심으로 작동하는 개인용 AI 어시스턴트</div>
-                </a>
+      <!-- Notes -->
+      <section id="notes">
+        <h2 class="text-xl font-semibold text-primary mb-4">Notes</h2>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-lg font-semibold text-primary">GitHub</div>
+            <div class="text-sm text-gray-500 mb-2">코드 저장소</div>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="https://github.com/myhappydays" class="text-gray-600 hover:underline">🛠 GitHub</a>
             </div>
-        </section>
+          </div>
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-lg font-semibold text-primary">Velog</div>
+            <div class="text-sm text-gray-500 mb-2">기술 블로그</div>
+            <div class="flex justify-center gap-4 text-sm">
+              <a href="https://velog.io/@myhappydays" class="text-gray-600 hover:underline">📚 Velog</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <footer class="text-sm mt-16 text-gray-500 text-center">
-            황석준 | 협성대학교<br>
-            edited by Kiro
-        </footer>
-    </main>
+      <!-- Side A -->
+      <section id="projects">
+        <h2 class="text-xl font-semibold text-primary mb-4">Side A</h2>
+        <div class="space-y-6">
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div class="text-lg font-semibold text-primary mb-1">Kiro-Ground</div>
+            <div class="text-sm text-gray-500 mb-2">커스텀 마크업 언어를 기반으로 한 기록 플랫폼</div>
+            <div class="flex gap-4 text-sm">
+              <a href="https://kiro.onlyoli.space" class="text-primary hover:underline">🌐 웹사이트</a>
+              <a href="https://github.com/myhappydays/kiro" class="text-gray-600 hover:underline">🛠 GitHub</a>
+            </div>
+          </div>
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div class="text-lg font-semibold text-primary mb-1">VINA</div>
+            <div class="text-sm text-gray-500 mb-2">사용자와의 주도적 인터랙션, 규칙 기반 행동, 기억 기능을 중심으로 작동하는 개인용 AI 어시스턴트</div>
+            <div class="flex gap-4 text-sm">
+              <a href="https://github.com/myhappydays/vina" class="text-gray-600 hover:underline">🛠 GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Side B -->
+      <section id="creative">
+        <h2 class="text-xl font-semibold text-primary mb-4">Side B</h2>
+        <div class="space-y-6">
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div class="text-lg font-semibold text-primary mb-1">Miro</div>
+            <div class="text-sm text-gray-500 mb-2">우리가 함께 찾을 미로 — 수원시 청소년 밴드</div>
+            <div class="flex gap-4 text-sm">
+              <a href="https://instagram.com/bandmiro_311" class="text-gray-600 hover:underline">📸 Instagram</a>
+            </div>
+          </div>
+          <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div class="text-lg font-semibold text-primary mb-1">Olidities</div>
+            <div class="text-sm text-gray-500 mb-2">독특한 아이템을 소개하는 잡화점. [잠정폐업!]</div>
+            <div class="flex gap-4 text-sm">
+              <a href="https://instagram.com/oliddities" class="text-gray-600 hover:underline">📸 Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-sm text-gray-500 text-center pt-12">
+        황석준 | 협성대학교<br />
+        edited by Kiro
+      </footer>
+    </div>
+  </main>
 </body>
 </html>
